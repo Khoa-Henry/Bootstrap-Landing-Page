@@ -1,9 +1,23 @@
+/* Custom Color Scheme for WCTC */
+:root {
+  --wctc-blue: #002d72; /* WCTC Blue */
+  --wctc-light-blue: #6eb5e2; /* WCTC Light Blue */
+  --wctc-grey: #939598; /* WCTC Grey */
+  --wctc-dark-grey: #4b4f54; /* WCTC Dark Grey */
+  --wctc-white: #ffffff; /* White */
+  --background-color: #f8f9fa; /* Light background */
+  --text-color: #333333; /* Dark Text */
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Arial, sans-serif;
 }
 
 header {
   background-image: url("https://www.suny.edu/media/suny/content-assets/images/education/sliders---education/Education-slider-GeneseeCC-classroom-tint.jpg");
+  background-color: var(--wctc-blue);
   background-size: cover;
   background-position: center;
   height: 520px;
@@ -15,6 +29,20 @@ header h1 {
   font-weight: 700;
 }
 
+/* Navbar Customization */
+.navbar {
+  background-color: var(--wctc-blue);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--wctc-blue) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--wctc-light-blue) !important;
+}
+
 .card img {
   height: 200px;
   object-fit: cover;
@@ -23,6 +51,11 @@ header h1 {
 .navIcon {
   max-width: 100%;
   max-height: 100%;
+}
+
+.leftAlign {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .iconContainer {
@@ -36,4 +69,30 @@ header h1 {
 
 .venueList {
   background-color: rgb(235, 242, 250);
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background-color: var(--wctc-blue);
+  border-color: var(--wctc-blue);
+  color: var(--wctc-white);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--wctc-light-blue);
+  border-color: var(--wctc-light-blue);
+  color: var(--wctc-white);
+}
+
+/* Footer Section */
+footer section {
+  background-color: var(--wctc-blue);
+  color: var(--wctc-white);
+  padding: 10px 0;
+}
+
+.accordionButton {
+  font-size: 22px;
+  text-transform: uppercase;
 }
