@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-image: url("https://www.suny.edu/media/suny/content-assets/images/education/sliders---education/Education-slider-GeneseeCC-classroom-tint.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 520px;
+  opacity: 0.8;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.navIcon {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.iconContainer {
+  height: 53px;
+  width: 249px;
+}
+
+.title {
+  padding-top: 19%;
+}
+
+.venueList {
+  background-color: rgb(235, 242, 250);
+}
